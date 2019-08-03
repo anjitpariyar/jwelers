@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Darker+Grotesque&display=swap');
+
+:root{
+	--lite-golden: #dda92f;
+	--lite-blue :#386eb6;
+	--dark-blue :#174169;
+	--dark-golden: #7a6522;
+	--oppo:#9BC2CF;
+
+}
+
+
+    /*font-family: 'Darker Grotesque', sans-serif;
+
+    font-family: 'Dancing Script', cursive;
+    */
+    /*color from photoshop
+		lite-golden #dda92f;
+		light-blue #386eb6;
+		dark-blue #174169;
+		dark-golden #7a6522;
+		*/
+		body{
+			font-family: 'Darker Grotesque', sans-serif;
+		}
+		.mycontainer{
+			width: 85%;
+			margin: 0 auto;
+		}
+		.padding-Y{
+			padding: 30px 0;
+		}
+		a:hover{
+			text-decoration: none;
+		}
+		.text-capatilize{
+			text-transform: capitalize;
+		}
+		.text-header{
+			font-family: 'Dancing Script', cursive;
+		}
+		p{
+			text-transform: capitalize;
+		}
+		h3{
+			font-family: 'Dancing Script', cursive;
+			text-transform: capitalize;
+			font-size: 40px;
+
+		}
+		button{
+			text-transform: uppercase;
+			background-color: var(--oppo);
+			color: #fff;
+			border: none;
+			font-size: 18px;
+		}
+		button:hover{
+			background-color: var(--dark-blue);
+		}
+
+
+		/*header part*/
+		.top-part{
+			height: 100px;
+		}
+		/*logo*/
+		.top-part .logo{
+			padding: 15px 0;
+		}
+		.top-part .logo img{
+			width: 115px;
+		}
+
+		/*menu part*/
+		.top-part .menu-part{
+			margin-top: 43px;
+		}
+		.top-part .menu-part ul{
+			list-style: none;
+			float: right;
+
+		}
+		.top-part .menu-part ul li{
+			display: inline;
+
+			font-size: 18px;
+
+			text-transform: uppercase;
+
+			margin-left: 87px;
+		}
+		.top-part .menu-part ul li a{
+			color: var(--dark-blue);
+		}
+		.top-part .menu-part ul li:first-child{
+			margin-left: 0;
+		}
+		/*hover and active part*/
+		.top-part .menu-part ul .active a{
+			color: #fff;
+
+			background: var(--lite-blue);
+
+			padding: 10px;
+		}
+		.top-part .menu-part ul li:hover a{
+			color: #fff;
+
+			background: var(--lite-blue);
+
+			padding: 10px;
+			transition: .5s ease;
+		}
+		/*header part ends here*/
+
+
+
+		/*start of home carosel img*/
+		
+		.homeimg .home-img-text{
+			position: absolute;
+
+			color: #fff;
+
+			text-align: right;
+
+			top: 43%;
+
+			right: 8%;
+		}
+		.homeimg .home-img-text p{
+			font-size: 20px;
+			margin-bottom: 0;
+		}
+		.homeimg .home-img-text h3{
+			margin-bottom: 15px;
+			font-family: 'Darker Grotesque', sans-serif;
+			text-transform: uppercase;
+		}
+		.homeimg .home-img-text button{
+			padding: 6px 22px;
+			background-color: var(--lite-golden);
+		}
+		.homeimg .home-img-text button:hover i{
+			transform: translateX(5px);
+
+			margin-left: 2px;
+			transition: .3s linear;
+		}
+		/*testimonies carosel indicator*/
+		.homeimg  li{
+			height: 12px;
+			width: 12px;
+			border-radius: 50%;
+			margin-right: 15px;
+			position: relative;
+		}
+		.homeimg .carousel-indicators li{
+			position: relative;
+		}
+		/*special indecators
+			.homeimg ol li::after{
+			content: " ";
+
+			position: absolute;
+
+			height: 18px;
+
+			width: 18px;
+			top: -4.5px;
+			left: -4.5px;
+
+			margin-left: 0px;
+			}*/
+			.homeimg .carousel-indicators .active {
+				height: 3px;
+				width: 33px;
+				border-radius: 0%;
+				margin-top: 8px;
+				transition: .3s linear;
+			}
+
+
+
+			/*latest product part*/
+			.latest-product .products .sub-products{
+
+			}
+
+			.latest-product .sub-products  img{
+				width: 100%;
+				object-fit: contain;
+
+				height: 200px;
+			}
+			.latest-product h3{
+				text-align: center;
+				margin: 0px auto;
+			}
+			.latest-product p{
+				color: var(--oppo);
+				text-align: center;
+			}
+			.latest-product p:hover{
+				color: var(--dark-blue);
+			}
+
+			/*tryna make image rotate and scale at a same times*/
+			.latest-product .sub-products  img:hover {
+				transform: rotate(16deg) scale(0.8); 
+				transition:  0.7s linear;
+				opacity: .8;
+
+
+			}
+
